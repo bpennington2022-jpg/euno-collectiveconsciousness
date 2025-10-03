@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} • {{ site.title | default: site.github.repository_name }}</title>
+  {% seo %}
+  {% include head-custom.html %}
+  <link rel="stylesheet" href="{{ "/assets/css/database.css" | relative_url }}">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="side-nav" aria-label="Primary">
+      <button class="side-tab is-active" aria-label="Home" data-tab="home" title="Home">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3l9-8z"/>
+        </svg>
+      </button>
+      <button class="side-tab" aria-label="Profile" data-tab="profile" title="Profile">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 12c2.76 0 5-2.69 5-6s-2.24-6-5-6-5 2.69-5 6 2.24 6 5 6zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/>
+        </svg>
+      </button>
+    </aside>
+
+    <header class="topbar" aria-label="Top bar">
+      <div class="topbar-left">
+        <div class="topbar-brand">{{ site.title | default: "Workspace" }}</div>
+        <nav class="topbar-words" aria-label="Primary words">
+          <a class="word is-active" href="#">Overview</a>
+          <a class="word" href="#">Data</a>
+          <a class="word" href="#">Activity</a>
+        </nav>
+      </div>
+      <div class="topbar-right">
+        <input type="text" class="topbar-search" placeholder="Search..." aria-label="Search">
+        <button class="top-btn" type="button">New</button>
+        <button class="top-btn" type="button">Import</button>
+        <button class="top-btn primary" type="button">Connect</button>
+      </div>
+    </header>
+
+    <main class="content" aria-label="Main content">
+      <!-- Intentionally empty per request -->
+    </main>
+  </div>
+
+  <script src="{{ "/assets/js/database.js" | relative_url }}" defer></script>
+</body>
+</html>
+
+
