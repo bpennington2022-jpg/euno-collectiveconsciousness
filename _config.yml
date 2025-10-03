@@ -1,0 +1,33 @@
+title: Euno Collective Consciousness
+description: >
+  Website powered by GitHub Pages + Jekyll (minima). Edit content in this repository.
+
+# Theme
+theme: minima
+
+# When publishing with GitHub Pages:
+# - For a user/organization site, keep baseurl empty ("").
+# - For a project site, set baseurl to "/<repo-name>".
+url: ""       # e.g., https://<your-username>.github.io
+baseurl: ""   # e.g., /euno-collectiveconsciousness for project site
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima theme config
+minima:
+  date_format: "%b %-d, %Y"
+
+# Exclude development artifacts from the site output
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - ".bundle"
+  - ".sass-cache"
+  - ".jekyll-cache"
+
