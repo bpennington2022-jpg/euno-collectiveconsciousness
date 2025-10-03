@@ -8,8 +8,8 @@ theme: minima
 # When publishing with GitHub Pages:
 # - For a user/organization site, keep baseurl empty ("").
 # - For a project site, set baseurl to "/<repo-name>".
-url: ""       # e.g., https://<your-username>.github.io
-baseurl: ""   # e.g., /euno-collectiveconsciousness for project site
+url: "https://bpennington2022-jpg.github.io"       # set to your user/org GitHub Pages URL
+baseurl: "/euno-collectiveconsciousness"   # project site base path
 
 # Build settings
 plugins:
